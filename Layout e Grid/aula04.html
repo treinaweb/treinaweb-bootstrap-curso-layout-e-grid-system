@@ -13,8 +13,20 @@
           height: 500px;
        } 
        
-       .conteudo {
+       .conteudo-1 {
            background-color: rgb(66, 114, 160);
+           border: solid 2px #000000;
+           height: 100px;
+       }
+
+       .conteudo-2 {
+           background-color: rgb(66, 160, 140);
+           border: solid 2px #000000;
+           height: 100px;
+       }
+
+       .conteudo-3 {
+           background-color: rgb(160, 77, 66);
            border: solid 2px #000000;
            height: 100px;
        }
@@ -22,12 +34,11 @@
 </head>
 <body>
     <div class="container">
-        <div class="row linha justify-content-evenly">
-            <div class="col-2 align-self-end conteudo"></div>
-            <div class="col-2 align-self-center conteudo"></div>
-            <div class="col-2 align-self-start conteudo"></div>
-            <div class="col-2 align-self-center conteudo"></div>
-            <div class="col-2 align-self-end conteudo"></div>
+        <div class="row linha align-items-center justify-content-evenly">
+            
+            <div class="col-2 conteudo-2"></div>
+            <div class="col-2 conteudo-1 order-md-last"></div>
+            <div class="col-2 conteudo-3 order-md-first"></div>
         </div>
     </div>
 </body>
